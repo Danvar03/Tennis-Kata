@@ -20,19 +20,19 @@ public class TennisGame1 implements TennisGame {
 
     public String getScore() {
         String score = "";
-        if (this.scorePlayer1 == this.scorePlayer2)
+        if (scorePlayer1 == scorePlayer2)
         {
             score = puntajeDeEmpate();
-        } else if ((this.scorePlayer1 >= 4) || (this.scorePlayer2 >= 4)) {
+        } else if ((scorePlayer1 >= 4) || (scorePlayer2 >= 4)) {
             score = avance();
         }else {
-            score = puntaje(this.scorePlayer1) + "-" + puntaje(this.scorePlayer2);
+            score = puntaje(scorePlayer1) + "-" + puntaje(scorePlayer2);
         }
         return score;
     }
 
     private String puntajeDeEmpate() {
-        switch (this.scorePlayer1)
+        switch (scorePlayer1)
         {
             case 0:
                 return "Love-All";

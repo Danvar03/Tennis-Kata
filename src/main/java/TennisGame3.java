@@ -6,9 +6,9 @@ public class TennisGame3 implements TennisGame {
     private String NamePlayer1;
     private String NamePlayer2;
 
-    public TennisGame3(String p1N, String p2N) {
-        this.NamePlayer1 = p1N;
-        this.NamePlayer2 = p2N;
+    public TennisGame3(String puntNam1, String puntNan2) {
+        this.NamePlayer1 = puntNam1;
+        this.NamePlayer2 = puntNan2;
     }
 
 
